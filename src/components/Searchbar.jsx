@@ -1,5 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
+import { FaSearch } from "react-icons/fa";
+import '../App.css'
 const Searchbar = () => {
     const [search, setSearch] = useState('')
     const handleClick = () =>{
@@ -12,8 +14,7 @@ const Searchbar = () => {
     }
   };
   return (
-    <>
-      <label htmlFor="srch"></label>
+    <div className='all'>
       <input
         type="text"
         className="srch"
@@ -24,8 +25,8 @@ const Searchbar = () => {
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleClick}>search</button>
-    </>
+      <button onClick={handleClick}><FaSearch /></button>
+    </div>
   );
 };
 

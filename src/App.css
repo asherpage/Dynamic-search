@@ -1,13 +1,85 @@
-body{
-  font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
-h1{
-  margin-left: 3rem;
+
+.app-container {
+  overflow: hidden;
+  /* Hide the scrollbar */
+}
+
+.hero-section {
+  height: 100vh;
+  /* 100% viewport height */
+  width: 100%;
+  /* 100% viewport width */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: black;
+  color: white;
+  height: 50rem;
+  padding: 1rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #601e31ae;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50rem;
+}
+.circle-divs{
+  margin-top: 5rem;
+  width: 60rem;
+  height: 18rem;
+  border-radius: 10rem;
+  background-color: #601e31ae;
+}
+input{
+  border-radius: 1rem;
+  background-color: azure;
+  border: none;
+  height: 1.5rem;
+  width: 20rem;
+}
+.all{
+  position: absolute;
+}
+.all button{
+  border: none;
+  background-color: transparent;
+  width: 2rem;
+  height: 1.6rem;
+  position: absolute;
+  margin-left: -2rem;
+  font-size: .9rem;
 }
