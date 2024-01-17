@@ -25,7 +25,7 @@ const Searchbar = () => {
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleClick}><FaSearch /></button>
+      <button onClick={handleClick} class="enter-button"><FaSearch /></button>
     </div>
   );
 };

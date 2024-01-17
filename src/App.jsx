@@ -1,25 +1,50 @@
+import React, { useState } from 'react';
 import './App.css';
 import Searchbar from './components/Searchbar';
-import image from './images/photo-1477346611705-65d1883cee1e.png'
-function App() {
-  const data = [1,2,3,4,5,6,7,8,9,10]
-  return (
+import RandomizedQuote from './components/RandomizedQuote';
 
-        <div className="app-container">
-      <div className="hero-section">
-         <Searchbar />
-        <img
-          src={image}
-          alt="Hero Section"
-          className="hero-image"
-        />
+function App() {
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  const openPopup = () => {
+    setPopupVisible(true);
+  };
+
+  const closePopup = () => {
+    setPopupVisible(false);
+  };
+
+  const handleQuoteClick = () => {
+    // Toggle the popup visibility when the 'quote' div is pressed
+    setPopupVisible(!popupVisible);
+  };
+
+  return (
+    <div className="container">
+      <div id="apps-container">
+        <h1>Apps</h1>
+        <div className="app-box" id='quote' onClick={handleQuoteClick}>
+        </div>
+        <div className="app-box">App 2</div>
+        <div className="app-box">App 3</div>
+        <div className="app-box">App 4</div>
       </div>
-      <div className="content">
-        
-        <div className='container'>
-          <div className='circle-divs'></div>
-          <div className='circle-divs'></div>
-        
+      <div className='searchbar-box'>
+        <h1>PBrowser</h1>
+        <Searchbar />
+        <div>
+
+          {popupVisible && (
+            <div id="popup-container">
+              <div id="popup-header">
+                <span id="close-btn" onClick={closePopup}>&times;</span>
+                Random Quote App
+              </div>
+              <div id="popup-content">
+                <RandomizedQuote />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
