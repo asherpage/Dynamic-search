@@ -23,7 +23,7 @@ body {
 #apps-container {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  width: 30rem;
+  width: 25rem;
   background-color: transparent;
   box-sizing: border-box;
   display: flex;
@@ -37,7 +37,8 @@ body {
 }
 
 .app-box {
-  width: 15rem;
+  border-radius: 0.5rem;
+  width: 13rem;
   height: 20rem;
   margin: 1rem 0;
   background-color: aliceblue;
@@ -60,7 +61,7 @@ body {
   align-items: center;
 }
 
-input {
+.srch {
   width: 35rem;
   height: 2.5rem;
   border-radius: 25rem;
@@ -108,7 +109,35 @@ input {
   align-items: flex-start;
   
 }
-
+#popup2-container {
+  display: show;
+  margin-left: 10rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  height: 70vh;
+  background-color: #1d1d1d;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+#popup-content2 h1{
+  color: #e6e6e6;
+  font-size: 3rem;
+  text-align: center;
+}
+#popup-content2 button{
+  background-color: #09ae1f;
+  border: none;
+  color: #eee;
+  border-radius: 25rem;
+  padding: 0.3rem;
+}
+#popup-content2 li{
+  color: #fff;
+}
 #close-btn {
   position: absolute;
   padding: .5rem .7rem;
@@ -138,4 +167,18 @@ input {
   background-position: center;
   background-size: cover;
   box-shadow: 0 0 5px #9AAAB4;
+}
+#spotify{
+  background-image: url(./images/spotiy.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 5px #1e1e1e;
+
+}
+.spotify-back{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

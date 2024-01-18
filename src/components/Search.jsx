@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import { FaSearch } from "react-icons/fa";
 import '../App.css'
-const Searchbar = () => {
+const Search = () => {
     const [search, setSearch] = useState('')
     const handleClick = () =>{
         window.open('https://www.google.com/search?q='+ search, "_blank")
@@ -30,4 +30,4 @@ const Searchbar = () => {
   );
 };
 
-export default Searchbar
+export default Search
