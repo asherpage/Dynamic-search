@@ -23,7 +23,7 @@ body {
 #apps-container {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  width: 30rem;
+  width: 20rem;
   background-color: transparent;
   box-sizing: border-box;
   display: flex;
@@ -37,7 +37,8 @@ body {
 }
 
 .app-box {
-  width: 15rem;
+  width: 11rem;
+  border-radius: 0.5rem;
   height: 20rem;
   margin: 1rem 0;
   background-color: aliceblue;
@@ -100,7 +101,7 @@ input {
 }
 
 #popup-content {
-  background-color: #9AAAB4;
+  background-color: #373c3e;
   width: 100%;
   height: 100%;
   display: flex;
@@ -133,9 +134,139 @@ input {
   border: none;
   padding: .5rem;
 }
-#quote{
+#app1{
   background-image: url(./images/luh\ fortuen\ cook.PNG);
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 5px #9AAAB4;
+  box-shadow: 0 0 10px #9AAAB4;
+}
+.spotify-thing{
+  width: 60rem;
+  height: 30rem;
+  border-radius: none;
+}
+#app2 {
+  background-image: url(./images/spot\ logo.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px #2b2b2b;
+}
+.spotify{
+  background-color: #282424;
+  height: 50rem;
+}
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-me-photo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-me-photo img {
+  max-width: 100%;
+  border-radius: 8px;
+  /* Optional: Add border-radius for a rounded image */
+}
+.photo{
+  width: 100px;
+  height: 100px;
+}
+.about-back{
+  background-color: #728d8a;
+  width: 60rem;
+  height: 50rem;
+  padding: 0 10rem 0 10rem;
+
+}
+#app3 {
+  background-image: url(./images/Untitled\ design\ \(3\).png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px #84c5d1;
+}
+#app4 {
+  background-image: url(./images/kitty.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px #e5e5e5;
+}
+.github-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: space-between;
+}
+.boxes{
+  width: 10rem;
+  height: 10rem;
+  background-color: #eee;
+  margin: 0 2rem 0 2rem ;
+  border-radius: 50rem;
+  box-shadow: 0 0 10px rgb(214, 213, 211);
+}
+.github-title{
+  font-size: .5rem;
+  margin-bottom: 1rem;
+}
+#aa{
+  background-image: url(./images/A&A.png);
+    background-position: center;
+    background-size: cover;
+}
+#blackj{
+  background-image: url(./images/black.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#github-logo {
+  background-image: url(./images/25231.png);
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+      display: flex;
+      height: 100vh;
+    }
+  
+    #apps-container {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      height: 20rem;
+      width: 100vw;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #apps-container h1 {
+      margin: 0;
+      color: #fff;
+    }
+  
+    .app-box {
+      width: 11rem;
+      border-radius: 0.5rem;
+      height: 20rem;
+      margin: 1rem 0;
+      background-color: aliceblue;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .app-box:hover {
+      background-color: #eee;
+    }
 }
