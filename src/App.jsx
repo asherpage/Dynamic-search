@@ -30,7 +30,6 @@ function App() {
   return (
     <div className="container">
       <div id="apps-container">
-        <h1>Apps</h1>
         <div className="app-box" id='app1' onClick={() => handleAppClick('Quote Gen')}>
         </div>
         <div className="app-box" id='app2' onClick={() => handleAppClick('Spotify')}>

@@ -231,42 +231,123 @@ input {
   background-position: center;
   background-size: cover;
 }
-@media only screen and (max-width: 600px) {
-  .container {
+@media only screen and (max-width: 1000px) {
+  html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: url('./images/calm asf.jpg') center/cover no-repeat;
+      font-family: Arial, sans-serif;
+      background-size: cover;
+    }
+  
+    @font-face {
+      font-family: tommy;
+      src: url(./MADE\ TOMMY\ Regular_PERSONAL\ USE.otf)
+    }
+  
+    * {
+      font-family: tommy;
+    }
+  
+    .container {
       display: flex;
+      flex-direction: column;
+      /* Adjust to column layout for smaller screens */
+      align-items: center;
+      /* Center content horizontally */
       height: 100vh;
     }
   
     #apps-container {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      height: 20rem;
+      margin-top: auto;
+      /* Push apps to the bottom */
       width: 100vw;
       background-color: transparent;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
+      /* Adjust to row layout for smaller screens */
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      
+      /* Center apps horizontally */
+      align-items: center;
+      /* Center apps vertically */
+    }
+        .app-box {
+          width: 10rem;
+          border-radius: 0.5rem;
+          height: 10rem;
+          margin: 1rem 0;
+          background-color: aliceblue;
+          text-align: center;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+  
+    .searchbar-box {
+      top:0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
   
-    #apps-container h1 {
-      margin: 0;
+    input {
+      width: 35rem;
+      height: 2.5rem;
+      border-radius: 25rem;
+      border: none;
+      padding-left: 1rem;
+      color: black;
+    }
+  
+    .searchbar-box h1 {
       color: #fff;
+      font-size: 5rem;
+      margin-bottom: 0;
+      text-shadow: 0 0 3px white;
     }
   
-    .app-box {
-      width: 11rem;
-      border-radius: 0.5rem;
-      height: 20rem;
-      margin: 1rem 0;
-      background-color: aliceblue;
-      text-align: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+    .enter-button {
+      display: none;
     }
   
-    .app-box:hover {
-      background-color: #eee;
+    #popup-container {
+      display: show;
+      margin-left: 10rem;
+      position: fixed;
+      top: 50%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      width: 40rem;
+      height: 50vh;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
     }
+        .spotify {
+          background-color: #282424;
+          height: 30rem;
+          width: 40rem;
+        }
+
+}
+@media only screen and (max-width: 700px) {
+  input {
+      width: 20rem;
+      height: 2.5rem;
+      border-radius: 25rem;
+      border: none;
+      padding-left: 1rem;
+      color: black;
+    }
+    .container h1{
+      font-size: 2rem;
+    }
+
 }
